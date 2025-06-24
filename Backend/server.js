@@ -8,7 +8,7 @@ const connectDatabase = require("./Helpers/database/connectDatabase")
 const customErrorHandler = require("./Middlewares/Errors/customErrorHandler")
 
 dotenv.config({
-    path:  './.env'
+    path:  './Config/.env'
 })
 
 connectDatabase()
