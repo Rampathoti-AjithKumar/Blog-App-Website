@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { HashRouter } from 'react-router-dom';
 import {Outlet} from 'react-router-dom'
 import PrivateRoute from './components/Routing/PrivateRoute';
 import Home from "./components/GeneralScreens/Home"
@@ -13,6 +14,7 @@ import EditStory from './components/StoryScreens/EditStory';
 const App = () => {
 
       return (
+      <HashRouter>
             <Router>
 
                   <div className="App">
@@ -67,6 +69,8 @@ const App = () => {
                   </div>
 
             </Router>
+
+</HashRouter>
 
       );
 
