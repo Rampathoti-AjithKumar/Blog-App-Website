@@ -24,7 +24,7 @@ const RegisterScreen = () => {
 
     try {
       const { data } = await axios.post(
-        "/auth/register",
+        "https://blog-app-backend-liard.vercel.app/auth/register",
         {
           username,
           email,
